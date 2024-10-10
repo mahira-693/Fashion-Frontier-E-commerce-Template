@@ -1,0 +1,266 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+.navbar{
+    background: #e9e3d1;
+    height: 70px;
+    display: flex;
+    align-items: center;
+
+}
+.logo a{
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+    font-size: 30px;
+    font-weight: 500;
+    }
+.nav-items a{
+    text-decoration: none;
+    color:rgb(44, 38, 38);
+    font-size: large; 
+    font-style:italic;
+}
+.nav-items a::after{
+content:"";
+width: 0%;
+height: 2px;
+background:#A87676;
+display: block;
+margin: auto;
+transition: 0.5s;
+}
+.navbar a:hover::after{
+    width: 100%;
+}
+.fa-bars{
+    display: none;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    transform: translateY(-50%);
+}
+@media(max-width:770px){
+   .fa-bars{
+    display: block;
+   } 
+}
+@media(max-width:770px){
+    .nav-items a{
+        display: none;
+    }
+}
+/*  */
+.main-container{
+    width: 100%;
+    
+}
+.image{
+    width: 100%;
+    height: 550px;
+    background: url(image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.image h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-style: italic;
+    color: #131842;
+    padding-right: 500px;
+}
+.image h4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #131842;  
+    font-style: italic;
+    padding-top: 150px;
+    padding-right: 500px;
+}
+.image button{
+    margin: 50px 150px ;
+    width: 20%;
+    height: 12%;
+    background: transparent;
+    border-radius: 5px;
+    border: 1px solid rgb(224, 86, 109);
+    font-size: large;
+    font-weight: 600;
+    transition: .4s;
+}
+.image button:hover{
+    background-color: white;
+    font-size: larger;
+}
+
+.card{
+    border:1px solid #FFB0B0;
+    height: 210px;
+    width: 180px;
+    border-radius: 4px;
+    padding: 25px 15px;
+    transition: .2s ease-in;
+}
+.card image{
+    background-position: center;
+    background-size: cover;
+}
+.card button{
+    border: none;
+    border-radius: 5px;
+    width: 70%;
+    height: 50px;
+    margin: auto;
+    margin-top: 40px;
+    color: #088178;
+    font-size: small;
+    font-weight: 700;
+}
+.card:hover{
+    box-shadow:0 5px 15px rgba(0, 0, 0, 0.6) ;
+}
+.procard{
+    margin-bottom: 60px;
+    box-shadow:0 0 10px rgba(255, 255, 255, 0.5) ;
+}
+.procard img{
+    width: 90%;
+    border-radius: 5px;
+    transition:.2s ease-out;
+}
+.procard .text{
+    text-align: center;
+    font-style: italic;
+    color:#131842;
+}
+.procard .stars{
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+    text-align: center;
+}
+.procard h4{
+    text-align: center;
+    font-size: small;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.procard img:hover{
+    box-shadow:0 5px 15px rgba(0, 0, 0, 0.6) ;
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://images.unsplash.com/photo-1530103043960-ef38714abb15?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGFlc3RoZXRpYyUyMGhvcml6b250YWwlMjBwb3RyYWl0c3xlbnwwfHwwfHx8MA%3D%3D);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    color: white;
+    font-style: italic;
+    font-weight: 500;
+}
+.banner2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(https://images.unsplash.com/photo-1500320821405-8fc1732209ca?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3VuJTIwZmxvd2VyfGVufDB8fDB8fHww);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    color: white;
+    
+}
+.banner2 h1{
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.ban1{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1XrC_okKXNDvR1JKTetBtmns3_-wzjohu_Q&s);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   height: 300px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;  
+
+}
+.ban2{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwpuANz231eNH9mL0sLK5Bov-UC2uuFeHObA&s);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.ban1 h3,.ban2 h3{
+    font-size: 30px;
+    font-weight: 700;
+}
+.banner3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(https://www.rafia.pk/cdn/shop/files/BG1_1500x.png?v=1613750565);
+  
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    color: white;
+}
+.banner3 input{
+    margin-top: 25px;
+    padding-left: 20px;
+    background: transparent;
+    outline: none;
+    border: 1px solid white;
+    width: 30%;
+    height: 15%;
+    border-radius: 5px;
+}
+.banner3 button{
+    width: 10%;
+    height: 15%;
+    margin-top: 20px;
+    background: white;
+    outline: none;
+    border: 1px solid white;
+    font-weight: 500;
+}
+.banner3 button:hover{
+    background: transparent;
+    color: white;
+}
+@media(max-width:768px){
+    .banner3 input{
+        width: 80%;
+    }
+    .banner3 button{
+        width: 20%;
+    }
+}
+
+.line1 .fa-brands{
+font-size: smaller;
+text-align: center;
+}
+.line2 a,.line3 a{
+    text-decoration: none;
+    color: black;
+}
+
